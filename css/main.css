@@ -1,0 +1,875 @@
+img {
+	width: 100%;
+}
+
+.header{
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: repeat (1, 50px);
+    width: 100%;
+    display: grid;
+	position: fixed;
+	top:0px;	
+	z-index: 1000;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+	background: #fff;
+}
+
+h1 {
+	font-size: 1.3vmax;
+    font-family: 'Raleway', sans-serif;
+    
+    font-weight: 900;
+	color: #37003c;
+	line-height: .8;
+	margin-left: 1vmax;
+}
+
+h2 {
+	font-size: 1.1vmax;
+	font-weight: 700;
+	font-family: 'Raleway', sans-serif;
+	display: inline-block;
+	color: #37003c;
+}
+
+.title{
+	grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+	text-align: left;
+	align-self: center;
+	
+}
+
+#subtitle{
+	font-weight: 600;
+	font-size: .9vmax;
+	color: #37003c;
+	font-weight: 300;
+}
+
+.menu{
+	
+	align-self: flex-start;
+	text-align: center;	
+}
+
+.apropos{
+	grid-column: 5 / span 1;
+    grid-row: 1 / span 2;	
+}
+
+.equipe{
+	grid-column: 6 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.projets{
+	grid-column: 7 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.lumiere{
+	grid-column: 8 / span 1;
+    grid-row: 1 / span 2;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+.menu:hover {
+    background-color: #22fd8e;
+}
+
+/*INDEX*/
+
+.wrapper_index{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: repeat (1, 50px);
+  grid-gap: .5vw .5vw;
+}
+
+.news{
+	grid-column: 5 / span 4;
+    grid-row: 20 / span 1;
+	font-size: 1vmax;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: right;	
+}
+
+.newsdate{
+    
+	font-size: 1vmax;
+	font-weight: 700;	
+}
+
+.newsmore{
+    
+	font-size: 1vmax;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+.news_details{
+	grid-column: 5 / span 4;
+    grid-row: 26 / span 1;
+    display: none;	
+}
+
+.news_scroll{
+    position: fixed;
+	overflow-y: scroll;
+    font-size: .9vmax;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	color: #37003c;
+    background-color: #fff;
+	text-align: left;
+    padding: 1vmax 1vmax 1vmax 1vmax;
+    /*display: none;*/
+    opacity: 1;
+    width: 40%;
+    margin-left: 1.5%;
+    height: 48%;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #fff;
+    opacity: 0.8;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #371e3e;
+}
+
+/*A PROPOS*/
+
+.wrapper_apropos{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: repeat (1, 50px);
+  grid-gap: .5vw .5vw;
+  display: none;
+}
+
+.text{
+	grid-column: 5 / span 4;
+    grid-row: 25 / span 1;
+	
+	font-size: .9vmax;
+	font-weight: 600;
+	line-height: 1.8vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: justify;	
+}
+
+.texttitle{
+	font-size: 1.4vmax;
+	font-weight: 900;
+	color: #6722f5;
+	background: #fff;
+	padding-right: 3px;
+
+}
+
+.apropos_left{
+	grid-column: 2 / span 2;
+    grid-row: 25 / span 1;
+	margin-top: 29px;
+	line-height: 1.2vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: right;	
+}
+
+#left_title{
+	font-size: 1.4vmax;
+	font-weight: 900;
+}
+
+#left_subtitle{
+	font-size: 1vmax;
+	font-weight: 400;
+	color: #37003c;
+	background: #22fd8e;
+}
+
+#left_unititle{
+	font-size: .9vmax;
+	font-weight:700;
+}
+
+#left_logo img{
+	width: 55%;
+}
+
+/*EQUIPE PROFESSEURS*/
+
+.wrapper_equipe{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: repeat (1, 50px);
+  grid-gap: .5vw .8vw;
+  display: none;
+}
+
+.equipe_p_photos_1{
+	grid-column: 5 / span 1;
+    grid-row: 25 / span 1;
+}
+
+.equipe_p_photos_2{
+	grid-column: 6 / span 1;
+    grid-row: 25 / span 1;
+}
+
+.equipe_p_photos_3{
+	grid-column: 7 / span 1;
+    grid-row: 25 / span 1;
+}
+
+.equipe_p_title_1{
+	grid-column: 5 / span 1;
+    grid-row: 26 / span 1;	
+}
+
+.equipe_p_title_2{
+	grid-column: 6 / span 1;
+    grid-row: 26 / span 1;	
+}
+
+.equipe_p_title_3{
+	grid-column: 7 / span 1;
+    grid-row: 26 / span 1;	
+}
+
+.equipe_p_title_main{	
+	font-size: 1.4vmax;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: left;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.equipe_p_title_sec{	
+	font-size: .8vmax;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: left;
+	font-style: italic;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.equipe_p_text{
+	font-size: 1.2vmax;
+	font-weight: 700;
+}
+
+.equipe_p_text_1{
+	grid-column: 5 / span 4;
+    grid-row: 27 / span 1;
+	
+	font-size: .9vmax;
+	font-weight: 600;
+	line-height: 1.8vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: justify;	
+	border-top: 1px solid white;
+	padding-top: 2vmax;
+	display: none;
+}
+
+.equipe_p_text_2{
+	grid-column: 5 / span 4;
+    grid-row: 27 / span 1;
+	
+	font-size: .9vmax;
+	font-weight: 600;
+	line-height: 1.8vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: justify;	
+	border-top: 1px solid white;
+	padding-top: 2vmax;
+	display: none;
+}
+
+.equipe_p_text_3{
+	grid-column: 5 / span 4;
+    grid-row: 27 / span 1;
+	
+	font-size: .9vmax;
+	font-weight: 600;
+	line-height: 1.8vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: justify;	
+	border-top: 1px solid white;
+	padding-top: 2vmax;
+	display: none;
+}
+
+.opacity {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+
+.equipe_left{
+	grid-column: 2 / span 2;
+    grid-row: 25 / span 1;
+	font-family: 'Raleway', sans-serif;
+	/*color: #fff;*/
+	text-align: right;	
+	font-size: 1.4vmax;
+	font-weight: 900;
+}
+
+/*#equipe_left_title_p a{
+	color: #6722f5;
+	background-color: #fff;
+}*/
+
+/*#equipe_left_title_e a{
+	color: #fff;
+}*/
+
+#equipe_left_title_e a{
+	opacity: 0.4;
+	color: #fff;
+}
+
+#equipe_left_title_p a{
+	opacity: 1;
+	color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*EQUIPE ETUDIANTS*/
+
+.equipe_e_title_main{	
+	font-size: 1.4vmax;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: left;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.equipe_e_title_sec{	
+	font-size: .8vmax;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: left;
+	font-style: italic;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.etudiant-hide{
+    display: none;
+}
+
+.equipe_e_title_main:hover + .equipe_e_title_sec {
+    opacity: 1;
+}
+
+.equipe_e_title_main:hover {
+    opacity: 1;
+}
+
+.etudiant_scroll{
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    grid-auto-rows: repeat (1, 150px);
+    width: 100%;
+    
+    grid-column: 5 / span 4;
+    grid-row: 25 / span 1;
+}
+
+.equipe_e_title_1{
+	grid-column: 1 / span 1;
+    grid-row: 1 / span 1;	
+    align-items:center;
+}
+
+.equipe_e_title_2{
+	grid-column: 2 / span 1;
+    grid-row: 1 / span 1;	
+}
+
+.equipe_e_title_3{
+	grid-column: 3 / span 1;
+    grid-row: 1 / span 1;	
+}
+
+.equipe_e_title_4{
+	grid-column: 4 / span 1;
+    grid-row: 1 / span 1;	
+}
+
+.equipe_e_title_5{
+	grid-column: 1 / span 1;
+    grid-row: 20 / span 1;	
+}
+
+.equipe_e_title_6{
+	grid-column: 2 / span 1;
+    grid-row: 20 / span 1;	
+}
+
+.equipe_e_title_7{
+	grid-column: 3 / span 1;
+    grid-row: 20 / span 1;	
+}
+
+.equipe_e_title_8{
+	grid-column: 4 / span 1;
+    grid-row: 20 / span 1;	
+}
+
+/* PROJETS */
+
+.wrapper_projets{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: repeat (1, 50px);
+  grid-gap: .5vw .8vw;
+  display: none;
+  
+}
+
+/* RIGHT */
+
+.projets_right{
+    display: grid;
+    
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .5vw .8vw;
+    grid-auto-rows: repeat (1, 50px);
+    width: 100%;
+    
+    grid-column: 5 / span 4;
+    grid-row: 25 / span 1;
+}
+
+.projets_photos_1, .projets_photos_2, .projets_photos_3, .projets_photos_4{
+    opacity: 0.5;
+	cursor: pointer;
+}
+
+.projets_01_title, .projets_02_title, .projets_03_title, .projets_04_title {
+    margin-bottom: 10vmax;
+	cursor: pointer;
+}
+
+.projets_01_title{
+	grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.projets_02_title{
+	grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.projets_03_title{
+	grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.projets_title_main{
+    font-size: 1.4vmax;
+	font-weight: 900;
+	color: #fff;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.projets_title_sec{	
+	font-size: .9vmax;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: left;
+	font-style: italic;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.p_one, .p_two, .p_three, .p_four{
+  opacity: 0.5;  
+}
+
+/* LEFT */
+
+.projets_left{
+    grid-column: 2 / span 2;
+    grid-row: 25 / span 1;
+}
+
+.projets_left_division{  
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: .5vw .8vw;
+    grid-auto-rows: repeat (1, 50px);
+
+}
+
+.projets_left_title{
+    font-size: 1.5vmax;
+	font-weight: 900;
+	color: #6722f5;
+	background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.projets_left_text{
+    font-size: .9vmax;
+	font-weight: 600;
+	line-height: 1.8vmax;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	text-align: justify;	
+}
+
+.projets_left_01{
+    position: fixed;
+    width: 20%;
+    display: none;
+    margin-top: -1.5vmax;
+}
+
+.projets_left_02{
+    position: fixed;
+    width: 20%;
+    display: none;
+    margin-top: -1.5vmax;
+}
+
+.projets_left_03{
+    position: fixed;
+    width: 20%;
+    display: none;
+    margin-top: -1.5vmax;
+}
+
+.projets_left_04{
+    position: fixed;
+    width: 20%;
+    display: none;
+    margin-top: -1.5vmax;
+}
+
+/* CHILD PROJECTS 01 ---------------------------------- */
+
+.wrapper_p_child_01{
+	display: grid;
+  	grid-template-columns: repeat(9, 1fr);
+  	grid-auto-rows: repeat (1, 50px);
+  	grid-gap: .5vw .8vw;
+    display: none;
+}
+
+.p_child_01_left_subtitle_01{	
+    font-size: 1.8vmax;
+	font-weight: 900;
+}
+
+.p_child_01_right_introduction{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+}
+
+.p_child_01_right_timeline{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+	display: none;
+}
+
+.p_child_01_right_projetchoisi{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+	display: none;
+}
+
+/* CHILD PROJECTS 02 ---------------------------------- */
+
+.wrapper_p_child_02{
+	display: grid;
+  	grid-template-columns: repeat(9, 1fr);
+  	grid-auto-rows: repeat (1, 50px);
+  	grid-gap: .5vw .8vw;
+    display: none;
+}
+
+.p_child_02_right_introduction{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+}
+
+.p_child_02_right_timeline{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+	display: none;
+}
+
+.p_child_02_right_projetchoisi{
+	grid-column: 5 / span 4;
+    grid-row: 10 / span 1;
+	display: none;
+}
+
+.p_child_02_scroll{
+    position: fixed;
+	overflow-y: scroll;
+    font-size: .9vmax;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	color: #37003c;
+    background-color: #fff;
+	text-align: left;
+    padding: 1vmax 1vmax 1vmax 1vmax;
+    /*display: none;*/
+    opacity: .8;
+    width: 40%;
+    margin-left: 1.5%;
+    height: 83%;
+}
+
+.info_card{
+	display: grid;
+  	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: repeat (1, 25px);
+	background: #e5e5e5;
+	color: #000;
+	line-height: 1.5vmax;
+	padding: 1vmax;
+	margin-top: 0.5vmax;
+	
+}
+
+.info_card_left{
+	grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.info_card_right{
+	grid-column: 2 / span 3;
+    grid-row: 1 / span 1;
+}
+
+.p_child_02_right_text{
+	margin-top: 1vmax;
+	text-align: justify;
+	color: #000;
+	line-height: 1.5vmax;
+}
+
+
+.p_child_02_left{
+	grid-column: 3 / span 1;
+    grid-row: 26 / span 1;
+}
+
+.p_child_02_left_title{
+    font-size: 1.2vmax;
+	font-weight: 900;
+	color: #37003c;
+	background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+	text-align: right;
+	padding-bottom: 1vmax;
+	border-bottom: 1px solid #37003c;
+	
+}
+
+#p_child_02_left_subtitle{
+	grid-column: 1 / span 3;
+	grid-row: 27 / span 1;
+}
+
+.p_child_02_left_subtitle{	
+    font-size: 1.1vmax;
+	font-weight: 300;
+	color: #37003c;
+	background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+	text-align: right;
+	cursor: pointer;
+}
+
+.p_child_02_left_subtitle_01{	
+    font-size: 1.8vmax;
+	font-weight: 900;
+}
+
+/* TIMELINE ------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+	
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #37003c;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.1vmax;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 35px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -1vmax;
+    background-color: white;
+    border: 4px solid #37003c;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #eeeeee;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #eeeeee;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #eeeeee;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #eeeeee transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 10px 10px;
+    background-color: #eeeeee;
+    position: relative;
+    border-radius: 0px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+}
+
+
+@media screen and (min-width: 1800px) {
+
+}
+
+
